@@ -37,11 +37,11 @@ class QuadraticEquation
 
     function getRoot1()
     {
-        $root1 = (-$this->b + $this->getDiscriminant()) / (2 * $this->a);
+        $root1 = (-$this->b + sqrt($this->getDiscriminant())) / (2 * $this->a);
         return $root1;
     }
     function getRoot2(){
-        $root2=(-$this->b - $this->getDiscriminant()) / (2 * $this->a);
+        $root2=(-$this->b - sqrt($this->getDiscriminant())) / (2 * $this->a);
         return $root2;
     }
 }
